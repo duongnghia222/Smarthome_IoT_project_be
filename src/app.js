@@ -3,12 +3,13 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 require('dotenv').config()
 require('./cloud/mongoDB')
+require('dotenv').config()
+const key = process.env.KEY
+const username = process.env.NAME
 
 const app = express()
 const {MQTTAdafruitIO} = require('./utils/adafruit_api')
 
-const username = 'Heo_Rey'
-const key = 'aio_dKJy32dJkMvsexDDgdoVbYTPNqxU'
 const options = {
     port: 8883
 }
