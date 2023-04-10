@@ -1,7 +1,8 @@
 import MQTTAdafruitIO from "./adafruit_api.js"
 
-const username = 'Heo_Rey'
-const key = 'aio_dKJy32dJkMvsexDDgdoVbYTPNqxU'
+require('dotenv').config()
+const key = process.env.KEY
+const username = process.env.NAME
 const options = {
     port: 8883
 }
