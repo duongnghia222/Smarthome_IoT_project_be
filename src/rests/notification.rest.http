@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "notificationInfo":{
-        "userKey": "heorey123",
+        "userKey": "duongnghia222",
         "description": "Let's study",
         "notificationId": 1
     }

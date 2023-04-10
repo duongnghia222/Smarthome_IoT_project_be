@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "activityInfo":{
-        "userKey": "heorey123",
+        "userKey": "duongnghia222",
         "description": "Turn on the light",
         "deviceId": 1,
         "deviceName": "Light",
