@@ -1,4 +1,4 @@
-import MQTTAdafruitIO from "./adafruit_api.js"
+const {MQTTAdafruitIO} = require('./adafruit_api') 
 
 require('dotenv').config()
 const key = process.env.KEY
@@ -9,4 +9,4 @@ const options = {
 let client = new MQTTAdafruitIO(username,key,options)
 
 client.connect()
-client.subscribe('fan')
+client.subscribe('bbc-temp')

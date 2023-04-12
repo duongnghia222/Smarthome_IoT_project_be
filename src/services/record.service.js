@@ -1,9 +1,16 @@
 const Record = require('../models/record.model')
 
+
 module.exports = {
     addARecord: async (recordInfo) => {
         let record = new Record(recordInfo);
-        await record.save();
+        record.save((err, record) => {
+            if (err) {
+              console.error(err);
+            } else {
+              console.log('New record created:', record);
+            }
+          });
         return {
             code: 200,
             message: recordInfo
