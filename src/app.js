@@ -16,9 +16,9 @@ const options = {
 let client = new MQTTAdafruitIO(username,key,options)
 
 client.connect()
-client.subscribe('humidity-sensor')
-client.subscribe('light-sensor')
-client.subscribe('temperature-sensor')
+client.subscribe('bbc-humid')
+client.subscribe('bbc-light')
+client.subscribe('bbc-temp')
 
 // add some useful middleware
 app.use(cors())
